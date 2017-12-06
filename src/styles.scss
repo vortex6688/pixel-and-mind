@@ -1,0 +1,91 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/scss/functions";
+@import "./css/variables";
+@import "~bootstrap/scss/mixins";
+//@import "~bootstrap/scss/print";
+//@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+//@import "~bootstrap/scss/images";
+//@import "~bootstrap/scss/code";
+@import "~bootstrap/scss/grid";
+//@import "~bootstrap/scss/tables";
+//@import "~bootstrap/scss/forms";
+//@import "~bootstrap/scss/buttons";
+//@import "~bootstrap/scss/transitions";
+//@import "~bootstrap/scss/dropdown";
+//@import "~bootstrap/scss/button-group";
+//@import "~bootstrap/scss/input-group";
+//@import "~bootstrap/scss/custom-forms";
+//@import "~bootstrap/scss/nav";
+//@import "~bootstrap/scss/navbar";
+//@import "~bootstrap/scss/card";
+//@import "~bootstrap/scss/breadcrumb";
+//@import "~bootstrap/scss/pagination";
+//@import "~bootstrap/scss/badge";
+//@import "~bootstrap/scss/jumbotron";
+//@import "~bootstrap/scss/alert";
+//@import "~bootstrap/scss/progress";
+//@import "~bootstrap/scss/media";
+//@import "~bootstrap/scss/list-group";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/_modal";
+//@import "~bootstrap/scss/tooltip";
+//@import "~bootstrap/scss/popover";
+//@import "~bootstrap/scss/carousel";
+@import "~bootstrap/scss/utilities";
+
+html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  background: url('./assets/images/snow.jpg') #fff center top no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  min-width: 320px;
+  height: 100%;
+  margin: 0;
+}
+
+router-outlet + * {
+  flex: 1 0 auto;
+  background: rgba(255,255,255, 0.8);
+  margin-top: 0.35em;
+}
+
+a {
+  text-decoration: $link-decoration;
+  color: $black;
+
+  &:hover {
+    color: #a52a2a;
+  }
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+h2,
+h3 {
+  color: #008080;
+}
+
+@media (max-width: 768px) {
+  body {
+    background: url('./assets/images/snow-m.jpg') center top no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+  p {
+    font-size: 1.325rem;
+  }
+
+  h2 {
+    font-size: 1.625rem; 
+  }
+}
